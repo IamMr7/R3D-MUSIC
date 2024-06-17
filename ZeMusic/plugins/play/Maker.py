@@ -6,13 +6,13 @@ from ZeMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
 
 
 @app.on_message(
-    command(["","‹ اوامر التشغيل ›"])
+    command(["", "‹ اوامر التشغيل ›"])
     & filters.group
 )
-async def maker(client: Client, message: Message):
+async def play_commands(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/b4e01d217d9dfcd10f8c0.jpg",
-        caption=f"""**- اوامر التشغيل اتبع مايلي
+        photo="https://te.legra.ph/file/b4e01d217d9dfcd10f8c0.jpg",
+        caption="""**- اوامر التشغيل اتبع مايلي
         
  [— — — — — — — — — —](https://te.legra.ph/file/b4e01d217d9dfcd10f8c0.jpg)
 ◇︰ تشغيل أو شغل : لبدء تشغيل الاغاني .
@@ -29,29 +29,29 @@ async def maker(client: Client, message: Message):
 
 ◇︰ ايقاف : لايقاف تشغيل الأغنية الحالية .**
 """,
-        reply_markup = InlineKeyboardMarkup(
-    [
-        [
-            InlineKeyboardButton("‹ السورس ›", url="https://t.me/rr_yn7"),
-            InlineKeyboardButton("‹ الدعم ›", url="https://t.me/F_b_i_u"),
-        ],
-        [
-            InlineKeyboardButton("Ꭺ𝟽𝖬𝖊𝖣 . 🇵🇸 ›", url="https://t.me/F_b_i_z"),
-        ],
-        [
-            InlineKeyboardButton("𝑅𝐴𝑌𝐴𝑁⛧", url="https://t.me/F_k_Q"),
-        ],
-    ]
-)
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton("‹ السورس ›", url="https://t.me/rr_yn7"),
+                    InlineKeyboardButton("‹ الدعم ›", url="https://t.me/F_b_i_u"),
+                ],
+                [
+                    InlineKeyboardButton("Ꭺ𝟽𝖬𝖊𝖣 . 🇵🇸 ›", url="https://t.me/F_b_i_z"),
+                    InlineKeyboardButton("𝑅𝐴𝑌𝐴𝑁⛧", url="https://t.me/F_k_Q"),
+                ],
+            ]
+        ),
+    )
+
 
 @app.on_message(
-    command(["","‹ اوامر التفعيل ›"])
+    command(["", "‹ اوامر التفعيل ›"])
     & filters.group
 )
-async def maker(client: Client, message: Message):
+async def activation_commands(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/b4e01d217d9dfcd10f8c0.jpg",
-        caption=f"""**
+        photo="https://te.legra.ph/file/b4e01d217d9dfcd10f8c0.jpg",
+        caption="""**
 - اوامر التفعيل اتبع مايلي
 
 — — — — — — — — — —
@@ -74,31 +74,27 @@ async def maker(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(
-                        "‹ السورس ›", url=f"https://t.me/rr_yn7"),
-                    InlineKeyboardButton(
-                        "‹ الدعم ›", url=f"https://t.me/F_b_i_u"),
+                    InlineKeyboardButton("‹ السورس ›", url="https://t.me/rr_yn7"),
+                    InlineKeyboardButton("‹ الدعم ›", url="https://t.me/F_b_i_u"),
                 ],
                 [
-                   InlineKeyboardButton(
-                        "Ꭺ𝟽𝖬𝖊𝖣 . 🇵🇸 ›", url=f"https://t.me/F_b_i_z"),
-                [
-                   InlineKeyboardButton(
-                        "𝑅𝐴𝑌𝐴𝑁⛧", url=f"https://t.me/F_k_Q"),
-                ],       
+                    InlineKeyboardButton("Ꭺ𝟽𝖬𝖊𝖣 . 🇵🇸 ›", url="https://t.me/F_b_i_z"),
+                    InlineKeyboardButton("𝑅𝐴𝑌𝐴𝑁⛧", url="https://t.me/F_k_Q"),
+                ],
             ]
         ),
     )
 
+
 @app.on_message(
-    command(["",""])
+    command(["", "‹ اوامر التسليه ›"])
     & filters.group
 )
-async def maker(client: Client, message: Message):
+async def fun_commands(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/b4e01d217d9dfcd10f8c0.jpg",
-        caption=f"""**
--  اوامر التسليه
+        photo="https://te.legra.ph/file/b4e01d217d9dfcd10f8c0.jpg",
+        caption="""**
+- اوامر التسليه
  — — — — — — — — — — 
  
 - ( غنيلي ) يرسل لك اغنية عشوائية
@@ -127,18 +123,16 @@ async def maker(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(
-                        "‹ السورس ›", url=f"https://t.me/rr_yn7"),
-                    InlineKeyboardButton(
-                        "‹ الدعم ›", url=f"https://t.me/F_b_i_u"),
+                    InlineKeyboardButton("‹ السورس ›", url="https://t.me/rr_yn7"),
+                    InlineKeyboardButton("‹ الدعم ›", url="https://t.me/F_b_i_u"),
                 ],
                 [
-                   InlineKeyboardButton(
-                        "Ꭺ𝟽𝖬𝖊𝖣 . 🇵🇸 ›", url=f"https://t.me/F_b_i_z"),
-                [
-                   InlineKeyboardButton(
-                        "𝑅𝐴𝑌𝐴𝑁⛧", url=f"https://t.me/F_k_Q"),
-                ],       
+                    InlineKeyboardButton("Ꭺ𝟽𝖬𝖊𝖣 . 🇵🇸 ›", url="https://t.me/F_b_i_z"),
+                    InlineKeyboardButton("𝑅𝐴𝑌𝐴𝑁⛧", url="https://t.me/F_k_Q"),
+                ],
             ]
         ),
     )
+
+if __name__ == "__main__":
+    app.run()
