@@ -25,7 +25,7 @@ def private_panel(_):
         ],
         [InlineKeyboardButton(text="الاوامر", callback_data="settings_back_helper")],
         [
-            InlineKeyboardButton(text="𓏺 𝗗𝗲𝘃 𝘀𝗼𝘂𝗿𝗰𝗲 .", user_id=config.OWNER_ID),
+            InlineKeyboardButton(text="𓏺 𝗗𝗲𝘃 𝘀𝗼𝘂𝗿𝗰𝗲 .", url=f"https://t.me/F_b_i_z"),
             InlineKeyboardButton(text="قناة السورس", url=f"https://t.me/rr_yn7"),
         ],
     ]
