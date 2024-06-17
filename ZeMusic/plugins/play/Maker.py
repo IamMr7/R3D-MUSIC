@@ -29,24 +29,20 @@ async def maker(client: Client, message: Message):
 
 ◇︰ ايقاف : لايقاف تشغيل الأغنية الحالية .**
 """,
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "‹ السورس ›", url=f"https://t.me/rr_yn7"),
-                    InlineKeyboardButton(
-                        "‹ الدعم ›", url=f"https://t.me/F_b_i_u"),
-                ],
-                [
-                   InlineKeyboardButton(
-                        "Ꭺ𝟽𝖬𝖊𝖣 . 🇵🇸 ›", url=f"https://t.me/F_b_i_z"),
-                [
-                   InlineKeyboardButton(
-                        "𝑅𝐴𝑌𝐴𝑁⛧", url=f"https://t.me/F_k_Q"),
-                ],       
-            ]
-        ),
-    )
+        reply_markup = InlineKeyboardMarkup(
+    [
+        [
+            InlineKeyboardButton("‹ السورس ›", url="https://t.me/rr_yn7"),
+            InlineKeyboardButton("‹ الدعم ›", url="https://t.me/F_b_i_u"),
+        ],
+        [
+            InlineKeyboardButton("Ꭺ𝟽𝖬𝖊𝖣 . 🇵🇸 ›", url="https://t.me/F_b_i_z"),
+        ],
+        [
+            InlineKeyboardButton("𝑅𝐴𝑌𝐴𝑁⛧", url="https://t.me/F_k_Q"),
+        ],
+    ]
+)
 
 @app.on_message(
     command(["","‹ اوامر التفعيل ›"])
