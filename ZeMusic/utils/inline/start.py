@@ -9,8 +9,7 @@ def start_panel(_):
         [
             InlineKeyboardButton(
                 text="ضيفني", url=f"https://t.me/{app.username}?startgroup=true"
-            ),
-            InlineKeyboardButton(text="الدعم", url=config.SUPPORT_CHAT),
+            )
         ],
     ]
     return buttons
@@ -26,11 +25,7 @@ def private_panel(_):
         ],
         [InlineKeyboardButton(text="الاوامر", callback_data="settings_back_helper")],
         [
-            InlineKeyboardButton(text="مطور اليكس", user_id=config.OWNER_ID),
-            InlineKeyboardButton(text="الدعم", url=config.SUPPORT_CHAT),
-        ],
-        [
-            InlineKeyboardButton(text="قناة المطور", url=config.SUPPORT_CHANNEL),
+            InlineKeyboardButton(text="𓏺 𝗗𝗲𝘃 𝘀𝗼𝘂𝗿𝗰𝗲 .", user_id=config.OWNER_ID),
             InlineKeyboardButton(text="قناة السورس", url=f"https://t.me/rr_yn7"),
         ],
     ]
